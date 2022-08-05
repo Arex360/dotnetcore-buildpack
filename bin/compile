@@ -75,7 +75,7 @@ if [ -f ${BUILD_DIR}/Procfile ]; then
 else
 	echo "Add web process to Procfile" | indent
 	cat << EOT >> ${BUILD_DIR}/Procfile
-console: dotnet ${PROJECT_NAME}.dll
+worker: dotnet ${PROJECT_NAME}.dll
 EOT
 fi
 
