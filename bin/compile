@@ -71,6 +71,7 @@ dotnet publish $PROJECT_FILE --output ${BUILD_DIR}/${OUTPUT_DIR} --configuration
 
 if [ -f ${BUILD_DIR}/Procfile ]; then
 	topic "WARNING"
+	
 	echo "Be careful with custom Procfile" | indent
 else
 	echo "Add web process to Procfile" | indent
